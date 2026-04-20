@@ -31,6 +31,10 @@ public class Book {
 
     @NotBlank
     @Column(nullable = false)
+    private int totalCopies;
+
+    @NotBlank
+    @Column(nullable = false)
     private int availableAmount;
 
     @OneToMany(mappedBy = "book" ,cascade = CascadeType.ALL,fetch = FetchType.LAZY)
