@@ -1,6 +1,7 @@
 package com.example.library_management_system.Model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
@@ -29,11 +30,10 @@ public class Book {
     @Column(columnDefinition = "BOOLEAN")
     private boolean available;
 
-    @NotBlank
+    @Min(1)
     @Column(nullable = false)
     private int totalCopies;
 
-    @NotBlank
     @Column(nullable = false)
     private int availableAmount;
 
