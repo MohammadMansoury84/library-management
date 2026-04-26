@@ -37,5 +37,5 @@ public class Loan {
     private LocalDate loanDate;
 
 
-    private LocalDate returnData;
+    private LocalDate returnDate;
 }

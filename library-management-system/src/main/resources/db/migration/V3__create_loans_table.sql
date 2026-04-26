@@ -4,7 +4,7 @@ CREATE TABLE loan (
     book_id BIGINT NOT NULL,
     status ENUM('BORROWED','RETURNED','OVERDUE'),
     loan_date DATE NOT NULL,
-    return_data DATE,
+    return_date DATE,
 
     CONSTRAINT fk_loan_user
         FOREIGN KEY (user_id)
