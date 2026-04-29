@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="fastRequestHistoryConfig">
+    <option name="historyList">
+      <list>
+        <ResponseHistory>
+          <option name="className" value="com.example.library_management_system.Controller.BookController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="library-management-system" />
+          <option name="method" value="addBook" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;title&quot;: &quot;title_sik3q&quot;,&#10;  &quot;totalCopies&quot;: 1&#10;}" />
+              <option name="className" value="com.example.library_management_system.Controller.BookController" />
+              <option name="jsonDocument" value="{&#10;  &quot;title&quot;: &quot;No comment,Value =title_sik3q&quot;,&#10;  &quot;totalCopies&quot;: &quot;No comment,Value =1&quot;&#10;}" />
+              <option name="method" value="addBook" />
+              <option name="methodDescription" value="addBook" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/books" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;title&quot;:&quot;No comment,Type =String&quot;,&quot;availableAmount&quot;:&quot;No comment,Type =Number&quot;,&quot;available&quot;:&quot;No comment,Type =Boolean&quot;}}" />
+              <option name="url" value="/api/books" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:7070/api/books&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 39&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;totalCopies&quot;:1,&quot;title&quot;:&quot;title_sik3q&quot;}&#13;&#10;" />
+          <option name="response" value="{&quot;id&quot;:9,&quot;title&quot;:&quot;title_sik3q&quot;,&quot;availableAmount&quot;:1,&quot;available&quot;:false}" />
+          <option name="url" value="/api/books" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.example.library_management_system.Controller.BookController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="library-management-system" />
+          <option name="method" value="addBook" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;title&quot;: &quot;title_o3ztg&quot;,&#10;  &quot;totalCopies&quot;: 1&#10;}" />
+              <option name="className" value="com.example.library_management_system.Controller.BookController" />
+              <option name="jsonDocument" value="{&#10;  &quot;title&quot;: &quot;No comment,Value =title_o3ztg&quot;,&#10;  &quot;totalCopies&quot;: &quot;No comment,Value =1&quot;&#10;}" />
+              <option name="method" value="addBook" />
+              <option name="methodDescription" value="addBook" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/books" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;title&quot;:&quot;No comment,Type =String&quot;,&quot;availableAmount&quot;:&quot;No comment,Type =Number&quot;,&quot;available&quot;:&quot;No comment,Type =Boolean&quot;}}" />
+              <option name="url" value="/api/books" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:7070/api/books&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 39&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;totalCopies&quot;:1,&quot;title&quot;:&quot;title_o3ztg&quot;}&#13;&#10;" />
+          <option name="response" value="{&quot;id&quot;:8,&quot;title&quot;:&quot;title_o3ztg&quot;,&quot;availableAmount&quot;:1,&quot;available&quot;:false}" />
+          <option name="url" value="/api/books" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.example.library_management_system.Controller.BookController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="library-management-system" />
+          <option name="method" value="getBook" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.example.library_management_system.Controller.BookController" />
+              <option name="method" value="getBook" />
+              <option name="methodDescription" value="getBook" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/books/{id}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;5&quot;}]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;title&quot;:&quot;No comment,Type =String&quot;,&quot;availableAmount&quot;:&quot;No comment,Type =Number&quot;,&quot;available&quot;:&quot;No comment,Type =Boolean&quot;}}" />
+              <option name="url" value="/api/books/{id}" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:7070/api/books/5&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;id&quot;:5,&quot;title&quot;:&quot;title_5aarx&quot;,&quot;availableAmount&quot;:10,&quot;available&quot;:false}" />
+          <option name="url" value="/api/books/{id}" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.example.library_management_system.Controller.BookController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="library-management-system" />
+          <option name="method" value="addBook" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;title&quot;: &quot;title_p75yz&quot;,&#10;  &quot;totalCopies&quot;: 3&#10;}" />
+              <option name="className" value="com.example.library_management_system.Controller.BookController" />
+              <option name="jsonDocument" value="{&#10;  &quot;title&quot;: &quot;No comment,Value =title_p75yz&quot;,&#10;  &quot;totalCopies&quot;: &quot;No comment,Value =1&quot;&#10;}" />
+              <option name="method" value="addBook" />
+              <option name="methodDescription" value="addBook" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/books" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;title&quot;:&quot;No comment,Type =String&quot;,&quot;availableAmount&quot;:&quot;No comment,Type =Number&quot;,&quot;available&quot;:&quot;No comment,Type =Boolean&quot;}}" />
+              <option name="url" value="/api/books" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:7070/api/books&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 39&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;totalCopies&quot;:3,&quot;title&quot;:&quot;title_p75yz&quot;}&#13;&#10;" />
+          <option name="response" value="{&quot;id&quot;:7,&quot;title&quot;:&quot;title_p75yz&quot;,&quot;availableAmount&quot;:3,&quot;available&quot;:false}" />
+          <option name="url" value="/api/books" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.example.library_management_system.Controller.BookController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="library-management-system" />
+          <option name="method" value="addBook" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;title&quot;: &quot;title_0w6a3&quot;,&#10;  &quot;totalCopies&quot;: 10&#10;}" />
+              <option name="className" value="com.example.library_management_system.Controller.BookController" />
+              <option name="jsonDocument" value="{&#10;  &quot;title&quot;: &quot;No comment,Value =title_0w6a3&quot;,&#10;  &quot;totalCopies&quot;: &quot;No comment,Value =1&quot;&#10;}" />
+              <option name="method" value="addBook" />
+              <option name="methodDescription" value="addBook" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/books" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;title&quot;:&quot;No comment,Type =String&quot;,&quot;availableAmount&quot;:&quot;No comment,Type =Number&quot;,&quot;available&quot;:&quot;No comment,Type =Boolean&quot;}}" />
+              <option name="url" value="/api/books" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:7070/api/books&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 40&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;totalCopies&quot;:10,&quot;title&quot;:&quot;title_0w6a3&quot;}&#13;&#10;" />
+          <option name="response" value="{&quot;id&quot;:null,&quot;title&quot;:null,&quot;availableAmount&quot;:null,&quot;available&quot;:false}" />
+          <option name="url" value="/api/books" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.example.library_management_system.Controller.BookController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="library-management-system" />
+          <option name="method" value="addBook" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;title&quot;: &quot;title_5aarx&quot;,&#10;  &quot;totalCopies&quot;: 10&#10;}" />
+              <option name="className" value="com.example.library_management_system.Controller.BookController" />
+              <option name="jsonDocument" value="{&#10;  &quot;title&quot;: &quot;No comment,Value =title_5aarx&quot;,&#10;  &quot;totalCopies&quot;: &quot;No comment,Value =1&quot;&#10;}" />
+              <option name="method" value="addBook" />
+              <option name="methodDescription" value="addBook" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/books" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;title&quot;:&quot;No comment,Type =String&quot;,&quot;availableAmount&quot;:&quot;No comment,Type =Number&quot;,&quot;available&quot;:&quot;No comment,Type =Boolean&quot;}}" />
+              <option name="url" value="/api/books" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:7070/api/books&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 40&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;totalCopies&quot;:10,&quot;title&quot;:&quot;title_5aarx&quot;}&#13;&#10;" />
+          <option name="response" value="{&quot;id&quot;:null,&quot;title&quot;:null,&quot;availableAmount&quot;:null,&quot;available&quot;:false}" />
+          <option name="url" value="/api/books" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.example.library_management_system.Controller.BookController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="library-management-system" />
+          <option name="method" value="addBook" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;title&quot;: &quot;title_71hwc&quot;,&#10;  &quot;totalCopies&quot;: 12&#10;}" />
+              <option name="className" value="com.example.library_management_system.Controller.BookController" />
+              <option name="jsonDocument" value="{&#10;  &quot;title&quot;: &quot;No comment,Value =title_71hwc&quot;,&#10;  &quot;totalCopies&quot;: &quot;No comment,Value =1&quot;&#10;}" />
+              <option name="method" value="addBook" />
+              <option name="methodDescription" value="addBook" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/books" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;title&quot;:&quot;No comment,Type =String&quot;,&quot;availableAmount&quot;:&quot;No comment,Type =Number&quot;,&quot;isAvailable&quot;:&quot;No comment,Type =Boolean&quot;}}" />
+              <option name="url" value="/api/books" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:7070/api/books&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 40&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;totalCopies&quot;:12,&quot;title&quot;:&quot;title_71hwc&quot;}&#13;&#10;" />
+          <option name="response" value="{&quot;id&quot;:null,&quot;title&quot;:null,&quot;availableAmount&quot;:null,&quot;available&quot;:false}" />
+          <option name="url" value="/api/books" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.example.library_management_system.Controller.BookController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="library-management-system" />
+          <option name="method" value="addBook" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;title&quot;: &quot;title&quot;,&#10;  &quot;totalCopies&quot;:11}" />
+              <option name="className" value="com.example.library_management_system.Controller.BookController" />
+              <option name="jsonDocument" value="{&#10;  &quot;title&quot;: &quot;No comment,Value =title_8q9g8&quot;,&#10;  &quot;totalCopies&quot;: &quot;No comment,Value =1&quot;&#10;}" />
+              <option name="method" value="addBook" />
+              <option name="methodDescription" value="addBook" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/books" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;title&quot;:&quot;No comment,Type =String&quot;,&quot;availableAmount&quot;:&quot;No comment,Type =Number&quot;,&quot;isAvailable&quot;:&quot;No comment,Type =Boolean&quot;}}" />
+              <option name="url" value="/api/books" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:7070/api/books&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 34&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;totalCopies&quot;:11,&quot;title&quot;:&quot;title&quot;}&#13;&#10;" />
+          <option name="response" value="{&quot;id&quot;:null,&quot;title&quot;:null,&quot;availableAmount&quot;:null,&quot;available&quot;:false}" />
+          <option name="url" value="/api/books" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.example.library_management_system.Controller.BookController" />
+          <option name="code" value="400" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="library-management-system" />
+          <option name="method" value="addBook" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;title&quot;: &quot;title&quot;,&#10;  &quot;totalCopies&quot;:0}" />
+              <option name="className" value="com.example.library_management_system.Controller.BookController" />
+              <option name="jsonDocument" value="{&#10;  &quot;title&quot;: &quot;No comment,Value =title_8q9g8&quot;,&#10;  &quot;totalCopies&quot;: &quot;No comment,Value =1&quot;&#10;}" />
+              <option name="method" value="addBook" />
+              <option name="methodDescription" value="addBook" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/books" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;title&quot;:&quot;No comment,Type =String&quot;,&quot;availableAmount&quot;:&quot;No comment,Type =Number&quot;,&quot;isAvailable&quot;:&quot;No comment,Type =Boolean&quot;}}" />
+              <option name="url" value="/api/books" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:7070/api/books&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 33&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;totalCopies&quot;:0,&quot;title&quot;:&quot;title&quot;}&#13;&#10;" />
+          <option name="response" value="{&quot;totalCopies&quot;:&quot;تعداد کل نسخه‌ها حداقل باید ۱ باشد&quot;}" />
+          <option name="url" value="/api/books" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.example.library_management_system.Controller.BookController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="library-management-system" />
+          <option name="method" value="addBook" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;title&quot;: &quot;title_43s7q&quot;,&#10;  &quot;totalCopies&quot;: 3&#10;}" />
+              <option name="className" value="com.example.library_management_system.Controller.BookController" />
+              <option name="jsonDocument" value="{&#10;  &quot;title&quot;: &quot;No comment,Value =title_43s7q&quot;,&#10;  &quot;totalCopies&quot;: &quot;No comment,Value =1&quot;&#10;}" />
+              <option name="method" value="addBook" />
+              <option name="methodDescription" value="addBook" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/books" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;title&quot;:&quot;No comment,Type =String&quot;,&quot;availableAmount&quot;:&quot;No comment,Type =Number&quot;,&quot;isAvailable&quot;:&quot;No comment,Type =Boolean&quot;}}" />
+              <option name="url" value="/api/books" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:7070/api/books&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 39&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;totalCopies&quot;:3,&quot;title&quot;:&quot;title_43s7q&quot;}&#13;&#10;" />
+          <option name="response" value="{&quot;id&quot;:null,&quot;title&quot;:null,&quot;availableAmount&quot;:null,&quot;available&quot;:false}" />
+          <option name="url" value="/api/books" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.example.library_management_system.Controller.BookController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="library-management-system" />
+          <option name="method" value="getBook" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.example.library_management_system.Controller.BookController" />
+              <option name="method" value="getBook" />
+              <option name="methodDescription" value="getBook" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/books/{id}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;title&quot;:&quot;No comment,Type =String&quot;,&quot;availableAmount&quot;:&quot;No comment,Type =Number&quot;,&quot;isAvailable&quot;:&quot;No comment,Type =Boolean&quot;}}" />
+              <option name="url" value="/api/books/{id}" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:7070/api/books/1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;id&quot;:null,&quot;title&quot;:null,&quot;availableAmount&quot;:null,&quot;available&quot;:false}" />
+          <option name="url" value="/api/books/{id}" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.example.library_management_system.Controller.BookController" />
+          <option name="code" value="200" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="library-management-system" />
+          <option name="method" value="getBook" />
+          <option name="methodType" value="GET" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="className" value="com.example.library_management_system.Controller.BookController" />
+              <option name="method" value="getBook" />
+              <option name="methodDescription" value="getBook" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/books/{id}" />
+              <option name="pathParamsKeyValueListJson" value="[{&quot;comment&quot;:&quot;&quot;,&quot;customFlag&quot;:2,&quot;enabled&quot;:true,&quot;key&quot;:&quot;id&quot;,&quot;type&quot;:&quot;Number&quot;,&quot;value&quot;:&quot;1&quot;}]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;title&quot;:&quot;No comment,Type =String&quot;,&quot;availableAmount&quot;:&quot;No comment,Type =Number&quot;,&quot;isAvailable&quot;:&quot;No comment,Type =Boolean&quot;}}" />
+              <option name="url" value="/api/books/{id}" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:7070/api/books/1&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;Request Body: &#13;&#10;    null&#13;&#10;" />
+          <option name="response" value="{&quot;id&quot;:null,&quot;title&quot;:null,&quot;availableAmount&quot;:null,&quot;available&quot;:false}" />
+          <option name="url" value="/api/books/{id}" />
+        </ResponseHistory>
+        <ResponseHistory>
+          <option name="className" value="com.example.library_management_system.Controller.BookController" />
+          <option name="code" value="201" />
+          <option name="enableEnv" value="local" />
+          <option name="enableProject" value="library-management-system" />
+          <option name="method" value="addBook" />
+          <option name="methodType" value="POST" />
+          <option name="paramGroup">
+            <ParamGroupCollection>
+              <option name="bodyKeyValueListJson" value="{&#10;  &quot;title&quot;: &quot;title_fd8ig&quot;,&#10;  &quot;totalCopies&quot;: 10&#10;}" />
+              <option name="className" value="com.example.library_management_system.Controller.BookController" />
+              <option name="jsonDocument" value="{&#10;  &quot;title&quot;: &quot;No comment,Value =title_fd8ig&quot;,&#10;  &quot;totalCopies&quot;: &quot;No comment,Value =1&quot;&#10;}" />
+              <option name="method" value="addBook" />
+              <option name="methodDescription" value="addBook" />
+              <option name="methodType" value="POST" />
+              <option name="multipartKeyValueListJson" value="[]" />
+              <option name="originUrl" value="/api/books" />
+              <option name="pathParamsKeyValueListJson" value="[]" />
+              <option name="returnDocument" value="{&quot;status&quot;:{},&quot;headers&quot;:{},&quot;body&quot;:{&quot;id&quot;:&quot;No comment,Type =Number&quot;,&quot;title&quot;:&quot;No comment,Type =String&quot;,&quot;availableAmount&quot;:&quot;No comment,Type =Number&quot;,&quot;isAvailable&quot;:&quot;No comment,Type =Boolean&quot;}}" />
+              <option name="url" value="/api/books" />
+              <option name="urlEncodedKeyValueListJson" value="[]" />
+              <option name="urlParamsKeyValueListJson" value="[]" />
+            </ParamGroupCollection>
+          </option>
+          <option name="requestInfo" value="Request Url: http://localhost:7070/api/books&#13;&#10;Request Headers: &#13;&#10;    Accept: application/json,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&#13;&#10;    User-Agent: Fast Request/2025.1.7.1&#13;&#10;    Accept-Encoding: gzip, deflate&#13;&#10;    Content-Length: 40&#13;&#10;    Content-Type: application/json;charset=UTF-8&#13;&#10;Request Body: &#13;&#10;    {&quot;totalCopies&quot;:10,&quot;title&quot;:&quot;title_fd8ig&quot;}&#13;&#10;" />
+          <option name="response" value="{&quot;id&quot;:null,&quot;title&quot;:null,&quot;availableAmount&quot;:null,&quot;available&quot;:false}" />
+          <option name="url" value="/api/books" />
+        </ResponseHistory>
+      </list>
+    </option>
+  </component>
+</project>

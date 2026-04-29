@@ -7,9 +7,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-
 public class BookRequestDTO {
 
     @NotBlank(message = "Book title is required")
