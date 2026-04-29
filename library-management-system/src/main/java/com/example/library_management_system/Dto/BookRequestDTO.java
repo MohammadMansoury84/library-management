@@ -12,10 +12,10 @@ import lombok.NoArgsConstructor;
 
 public class BookRequestDTO {
 
-    @NotBlank(message = "عنوان کتاب الزامی است")
+    @NotBlank(message = "Book title is required")
     private String title;
 
-    @Min(value = 1, message = "تعداد کل نسخه‌ها حداقل باید ۱ باشد")
+    @Min(value = 1, message = "Total copies must be at least 1")
     private int totalCopies;
 
 

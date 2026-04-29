@@ -8,6 +8,6 @@ public class BookResponseDTO {
     private Long id;
     private String title;
     private Integer availableAmount;
-    private boolean isAvailable;
+    private boolean available;
 
 }
