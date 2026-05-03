@@ -2,12 +2,14 @@ package com.example.library_management_system.Controller;
 
 import com.example.library_management_system.Dto.BookRequestDTO;
 import com.example.library_management_system.Dto.BookResponseDTO;
+import com.example.library_management_system.Validation.ValidationGroups;
 import com.example.library_management_system.service.BookService;
 import com.example.library_management_system.service.LoanService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -21,7 +23,7 @@ public class BookController {
     private final LoanService loanService;
 
     @PostMapping
-    public ResponseEntity<BookResponseDTO> addBook(@Valid @RequestBody BookRequestDTO bookRequestDTO){
+    public ResponseEntity<BookResponseDTO> addBook(@Validated(ValidationGroups.OnCreate.class) @RequestBody BookRequestDTO bookRequestDTO){
         return ResponseEntity.status(HttpStatus.CREATED)
                 .body(bookService.addBook(bookRequestDTO));
     }
@@ -41,7 +43,7 @@ public class BookController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<BookResponseDTO> updateBook(@PathVariable Long id,@RequestBody BookRequestDTO bookRequestDTO){
+    public ResponseEntity<BookResponseDTO> updateBook(@PathVariable Long id,@Validated(ValidationGroups.OnUpdate.class) @RequestBody BookRequestDTO bookRequestDTO){
         return ResponseEntity.ok(bookService.updateBook(id,bookRequestDTO));
     }
 

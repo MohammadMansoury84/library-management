@@ -11,5 +11,6 @@ public class BookResponseDTO {
     private String title;
     private Integer availableAmount;
     private boolean available;
+    private String isbn;
 
 }

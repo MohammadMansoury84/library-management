@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface BookRepository extends JpaRepository<Book,Long> {
@@ -17,6 +18,7 @@ public interface BookRepository extends JpaRepository<Book,Long> {
     @Query("SELECT b from Book b where b.availableAmount >0 ORDER BY b.title")
     List<Book> findBookByAvailableAmountGreaterThanZero();
 
+    Optional<Book> findByIsbn(String isbn);
 
 
 
