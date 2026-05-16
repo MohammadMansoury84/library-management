@@ -37,6 +37,9 @@ public class Book {
     @Column(nullable = false)
     private int totalCopies;
 
+    @Version
+    private Long version;
+
     @Column(nullable = false)
     private int availableAmount;
 

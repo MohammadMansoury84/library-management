@@ -2,9 +2,11 @@ package com.example.library_management_system.Controller;
 
 import com.example.library_management_system.Dto.LoanRequestDTO;
 import com.example.library_management_system.Dto.LoanResponseDTO;
+import com.example.library_management_system.Dto.PageResponseDTO;
 import com.example.library_management_system.service.LoanService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -30,7 +32,7 @@ public class LoanController {
     }
 
     @GetMapping("/user/{userId}")
-    public ResponseEntity<List<LoanResponseDTO>> getUserLoans(@PathVariable Long userId) {
-        return ResponseEntity.ok(loanService.getUserLoans(userId));
+    public ResponseEntity<PageResponseDTO<LoanResponseDTO>> getUserLoans(@PathVariable Long userId, Pageable pageable) {
+        return ResponseEntity.ok(loanService.getUserLoans(userId,pageable));
     }
 }

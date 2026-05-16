@@ -2,11 +2,15 @@ package com.example.library_management_system.Controller;
 
 import com.example.library_management_system.Dto.BookRequestDTO;
 import com.example.library_management_system.Dto.BookResponseDTO;
+import com.example.library_management_system.Dto.PageResponseDTO;
 import com.example.library_management_system.Validation.ValidationGroups;
 import com.example.library_management_system.service.BookService;
 import com.example.library_management_system.service.LoanService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -29,11 +33,11 @@ public class BookController {
     }
 
     @GetMapping
-    public ResponseEntity<List<BookResponseDTO>> getAllBooks(@RequestParam(required = false) String title){
+    public ResponseEntity<PageResponseDTO<BookResponseDTO>> getAllBooks(@RequestParam(required = false) String title, @PageableDefault(size = 10,sort = "title",direction = Sort.Direction.ASC) Pageable pageable){
         if(title!=null && !title.isBlank()){
-            return ResponseEntity.ok(bookService.searchBooks(title));
+            return ResponseEntity.ok(bookService.searchBooks(title,pageable));
         }
-        return ResponseEntity.ok(bookService.getAllBooks());
+        return ResponseEntity.ok(bookService.getAllBooks(pageable));
 
     }
 

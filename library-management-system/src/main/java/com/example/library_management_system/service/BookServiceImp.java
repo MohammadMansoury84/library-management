@@ -2,11 +2,14 @@ package com.example.library_management_system.service;
 
 import com.example.library_management_system.Dto.BookRequestDTO;
 import com.example.library_management_system.Dto.BookResponseDTO;
+import com.example.library_management_system.Dto.PageResponseDTO;
 import com.example.library_management_system.Exception.ResourceNotFoundException;
 import com.example.library_management_system.Mapper.BookMapper;
 import com.example.library_management_system.Model.Book;
 import com.example.library_management_system.repository.BookRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -31,11 +34,10 @@ public class BookServiceImp implements BookService {
     }
 
     @Override
-    public List<BookResponseDTO> getAllBooks() {
-        return bookRepository.findAll()
-                .stream()
-                .map(bookMapper::bookToBookResponseDTO)
-                .toList();
+    public PageResponseDTO<BookResponseDTO> getAllBooks(Pageable pageable) {
+        Page<Book> bookPage=bookRepository.findAll(pageable);
+        Page<BookResponseDTO> page=bookPage.map(bookMapper::bookToBookResponseDTO);
+        return PageResponseDTO.of(page);
     }
 
     @Override
@@ -64,12 +66,13 @@ public class BookServiceImp implements BookService {
 
 
     @Override
-    public List<BookResponseDTO> searchBooks(String title) {
-        return bookRepository.findBookByTitleContainsIgnoreCase(title)
-                .stream()
-                .map(bookMapper::bookToBookResponseDTO)
-                .toList();
+    public PageResponseDTO<BookResponseDTO> searchBooks(String title, Pageable pageable) {
+        Page<Book> bookPage=bookRepository.findBookByTitleContainsIgnoreCase(title,pageable);
+        Page<BookResponseDTO> pageResponseDTO=bookPage.map(bookMapper::bookToBookResponseDTO);
+        return PageResponseDTO.of(pageResponseDTO);
+
     }
+
 
 
 
@@ -79,6 +82,9 @@ public class BookServiceImp implements BookService {
                         new ResourceNotFoundException("Book with id " + id + " was not found")
                 );
     }
+
+
+
 
 
 
