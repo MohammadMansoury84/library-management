@@ -11,6 +11,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -22,15 +23,23 @@ public class BookServiceImp implements BookService {
     private final BookMapper bookMapper;
 
     @Override
-    public BookResponseDTO addBook(BookRequestDTO bookRequestDTO){
-        Book book= Book.builder()
-                .title(bookRequestDTO.getTitle())
-                .isbn(bookRequestDTO.getIsbn())
-                .totalCopies(bookRequestDTO.getTotalCopies())
-                .availableAmount(bookRequestDTO.getTotalCopies())
-                .build();
-
-        return bookMapper.bookToBookResponseDTO(bookRepository.save(book));
+    @Transactional
+    public BookResponseDTO addBook(BookRequestDTO bookRequestDTO) {
+        return bookRepository.findByIsbn(bookRequestDTO.getIsbn())
+                .map(existingBook -> {
+                    existingBook.setTotalCopies(existingBook.getTotalCopies() + bookRequestDTO.getTotalCopies());
+                    existingBook.setAvailableAmount(existingBook.getAvailableAmount() + bookRequestDTO.getTotalCopies());
+                    return bookMapper.bookToBookResponseDTO(bookRepository.save(existingBook));
+                })
+                .orElseGet(() -> {
+                    Book newBook = Book.builder()
+                            .title(bookRequestDTO.getTitle())
+                            .isbn(bookRequestDTO.getIsbn())
+                            .totalCopies(bookRequestDTO.getTotalCopies())
+                            .availableAmount(bookRequestDTO.getTotalCopies())
+                            .build();
+                    return bookMapper.bookToBookResponseDTO(bookRepository.save(newBook));
+                });
     }
 
     @Override

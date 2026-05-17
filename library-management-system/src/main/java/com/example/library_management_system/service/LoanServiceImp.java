@@ -51,6 +51,12 @@ public class LoanServiceImp implements LoanService {
             throw new BookNotAvailableException("The requested book is currently not available.");
         }
 
+        int updateRows=bookRepository.decreaseAvailableAmount(book.getId());
+        if (updateRows==0){
+            throw new BookNotAvailableException("book available amount is zero");
+        }
+
+
         book.setAvailableAmount(book.getAvailableAmount()-1);
         bookRepository.save(book);
 
@@ -67,16 +73,17 @@ public class LoanServiceImp implements LoanService {
     }
 
     @Override
+    @Transactional
     public LoanResponseDTO returnBook(Long loanId) {
-        Loan loan=loanRepository.findById(loanId).orElseThrow(()->new ResourceNotFoundException("loan not found"));
+        Loan loan = loanRepository.findById(loanId)
+                .orElseThrow(() -> new ResourceNotFoundException("Loan not found"));
+        if (loan.getStatus() == LoanStatus.RETURNED) {
+            throw new IllegalStateException("Book already returned");
+        }
+        bookRepository.increaseAvailableAmount(loan.getBook().getId());
         loan.setStatus(LoanStatus.RETURNED);
         loan.setReturnDate(LocalDate.now());
-        Book book=loan.getBook();
-        book.setAvailableAmount(book.getAvailableAmount()+1);
-        bookRepository.save(book);
-
         return loanMapper.loanToLoanResponseDTO(loanRepository.save(loan));
-
     }
 
     @Override
